@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<div class="row">
+    <div class="col-lg-8">
+    <small>
+        {{customer.user}}
+    </small>
+    <small>
+        {{customer.created_date}}
+    </small>
+    <h3 class="mt-4">Müşterinin İsmi: {{customer.name}} {{customer.surname}}</h3>
+    <hr>
+    <p>Tc No: {{customer.tc}}</p>
+    <hr>
+    <p>Telefon: {{customer.phone}}</p>
+    <hr>
+    <p>Şehir: {{customer.city}}</p>
+    <hr>
+    <p>İlçe: {{customer.district}}</p>
+    <hr>
+    <p>Transfer Tarihi: {{customer.created_date}}</p>
+    </div>
+</div>
+
+{% endblock body %}
